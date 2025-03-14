@@ -1,12 +1,15 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 z-50 w-full transition-all duration-300" id="header">
+    <header
+      className="fixed top-0 z-50 w-full transition-all duration-300"
+      id="header"
+    >
       <div className="container flex h-16 items-center justify-between">
         <motion.div
           className="flex items-center gap-2"
@@ -43,19 +46,34 @@ export default function Header() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Link href="#" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+          >
             Home
           </Link>
-          <Link href="#" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+          >
             About Us
           </Link>
-          <Link href="#" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+          >
             Services
           </Link>
-          <Link href="#" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+          >
             Blog
           </Link>
-          <Link href="#" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+          >
             Contact
           </Link>
         </motion.nav>
@@ -65,10 +83,11 @@ export default function Header() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full">Let's Talk</Button>
+          <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full">
+            Let's Talk
+          </Button>
         </motion.div>
       </div>
     </header>
-  )
+  );
 }
-
