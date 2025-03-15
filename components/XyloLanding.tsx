@@ -45,7 +45,7 @@ export default function XyloLanding() {
     <div className="flex min-h-screen items-center flex-col bg-black text-white">
       <Header />
 
-      <main className="flex-1">
+      <main className="flex-1 w-full">
         <HeroSection />
         <AboutSection />
         <ServicesSection />

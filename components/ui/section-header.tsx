@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 interface SectionHeaderProps {
-  title: string
+  title: string;
 }
 
 export default function SectionHeader({ title }: SectionHeaderProps) {
@@ -16,7 +16,7 @@ export default function SectionHeader({ title }: SectionHeaderProps) {
       transition={{ duration: 0.5 }}
     >
       {title}
+      <div className="bg-gradient-to-r h-[0.5px] mt-4 from-white/50 via-white/10 through to-black" />
     </motion.div>
-  )
+  );
 }
-
