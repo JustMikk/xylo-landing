@@ -1,17 +1,18 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion, type AnimationControls } from "framer-motion"
+import Image from "next/image";
+import { motion, type AnimationControls } from "framer-motion";
 
 interface ProcessStepProps {
-  number: number
-  title: string
-  description: string
-  sideTitle: string
-  sideDescription: string
-  isLeft: boolean
-  delay?: number
-  controls: AnimationControls
+  number: number;
+  title: string;
+  description: string;
+  sideTitle: string;
+  sideDescription: string;
+  isLeft: boolean;
+  delay?: number;
+  controls: AnimationControls;
+  src: string;
 }
 
 export default function ProcessStep({
@@ -20,6 +21,7 @@ export default function ProcessStep({
   description,
   sideTitle,
   sideDescription,
+  src,
   isLeft,
   delay = 0,
   controls,
@@ -36,14 +38,16 @@ export default function ProcessStep({
     >
       <div className="flex flex-col md:flex-row items-center">
         <div
-          className={`md:w-1/2 ${isLeft ? "md:pr-12 md:text-right" : "md:pl-12"} mb-8 md:mb-0 ${isLeft ? "order-2 md:order-1" : "order-2"}`}
+          className={`md:w-1/2 ${
+            isLeft ? "md:pr-12 md:text-right" : "md:pl-12"
+          } mb-8 md:mb-0 ${isLeft ? "order-2 md:order-1" : "order-2"}`}
         >
           <div className="bg-gray-800/80 p-6 rounded-lg border border-green-500/20 shadow-[0_0_20px_rgba(74,222,128,0.2)]">
             <h3 className="text-lg font-medium mb-2 text-white">{title}</h3>
             <p className="text-white/70 text-sm mb-4">{description}</p>
             <div className="mt-4 bg-gray-900 rounded-lg p-4">
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src={src}
                 width={300}
                 height={200}
                 alt={`${title} visualization`}
@@ -56,7 +60,9 @@ export default function ProcessStep({
           {number}
         </div>
         <div
-          className={`md:w-1/2 ${isLeft ? "md:pl-12" : "md:pr-12 md:text-right"} ${isLeft ? "order-1 md:order-2" : "order-1 md:order-1"}`}
+          className={`md:w-1/2 ${
+            isLeft ? "md:pl-12" : "md:pr-12 md:text-right"
+          } ${isLeft ? "order-1 md:order-2" : "order-1 md:order-1"}`}
         >
           <div className="h-full flex items-center justify-end">
             <div className="bg-black/40 p-4 rounded-lg">
@@ -67,6 +73,5 @@ export default function ProcessStep({
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
-

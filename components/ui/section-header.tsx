@@ -9,7 +9,7 @@ interface SectionHeaderProps {
 export default function SectionHeader({ title }: SectionHeaderProps) {
   return (
     <motion.div
-      className="text-xs text-white/60 mb-4"
+      className="text-sm text-white/60 mb-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

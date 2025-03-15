@@ -1,24 +1,27 @@
-"use client"
+"use client";
 
-import { useRef, useEffect } from "react"
-import { motion, useAnimation, useInView } from "framer-motion"
-import SectionHeader from "@/components/ui/section-header"
-import ProcessStep from "@/components/ui/process-step"
+import { useRef, useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+import SectionHeader from "@/components/ui/section-header";
+import ProcessStep from "@/components/ui/process-step";
 
 export default function ProcessSection() {
-  const controls = useAnimation()
-  const processRef = useRef(null)
-  const isProcessInView = useInView(processRef, { once: true, amount: 0.2 })
+  const controls = useAnimation();
+  const processRef = useRef(null);
+  const isProcessInView = useInView(processRef, { once: true, amount: 0.2 });
 
   useEffect(() => {
     if (isProcessInView) {
-      controls.start("visible")
+      controls.start("visible");
     }
-  }, [controls, isProcessInView])
+  }, [controls, isProcessInView]);
 
   return (
-    <section className="w-full py-12 md:py-24 bg-gradient-to-b from-black to-gray-900/90" ref={processRef}>
-      <div className="container px-4 md:px-6">
+    <section
+      className="w-full py-12 md:py-24 bg-gradient-to-b from-black to-gray-900/90"
+      ref={processRef}
+    >
+      <div className="container mx-auto px-4 md:px-6">
         <SectionHeader title="OUR PROCESS" />
         <motion.h2
           className="text-3xl font-bold mb-12"
@@ -27,7 +30,11 @@ export default function ProcessSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Experience the Power of <span className="text-green-400">Process</span>.
+          Experience the Power of{" "}
+          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-blue-800 via-green-800 to-green-400">
+            Process
+          </span>
+          .
         </motion.h2>
         <motion.p
           className="text-white/70 mb-16 max-w-3xl"
@@ -36,8 +43,9 @@ export default function ProcessSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Instead of the traditional approach of just building what you ask for, we take the time to understand your
-          business goals and create a solution that works for you.
+          Instead of the traditional approach of just building what you ask for,
+          we take the time to understand your business goals and create a
+          solution that works for you.
         </motion.p>
 
         {/* Timeline Process Section */}
@@ -48,6 +56,7 @@ export default function ProcessSection() {
           <div className="space-y-24">
             <ProcessStep
               number={1}
+              src="/images/strategy.png"
               title="Strategy"
               description="First, we need to know your goals, your users, and your business to create a plan that works."
               sideTitle="Define"
@@ -59,6 +68,7 @@ export default function ProcessSection() {
 
             <ProcessStep
               number={2}
+              src="/images/design.png"
               title="Design"
               description="We create wireframes and designs that align with your brand and provide an optimal user experience."
               sideTitle="Create"
@@ -70,6 +80,7 @@ export default function ProcessSection() {
 
             <ProcessStep
               number={3}
+              src="/images/development.png"
               title="Development"
               description="Our engineers build your solution using modern technologies and best practices."
               sideTitle="Build"
@@ -81,6 +92,7 @@ export default function ProcessSection() {
 
             <ProcessStep
               number={4}
+              src="/images/delivery.png"
               title="Deliver"
               description="We deploy your solution and provide ongoing support to ensure its success."
               sideTitle="Launch"
@@ -93,6 +105,5 @@ export default function ProcessSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
