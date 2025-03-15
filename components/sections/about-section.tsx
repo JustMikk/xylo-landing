@@ -23,7 +23,10 @@ export default function AboutSection() {
               <DatabaseIcon className="text-white/90 text-xl" />
             </div>
             <h2 className="text-4xl font-bold mb-6">
-              We are a <span className="text-purple-500">group of experts</span>{" "}
+              We are a{" "}
+              <span className="bg-gradient-to-bl bg-clip-text text-transparent from-violet-800 to-fuchsia-500">
+                group of experts
+              </span>{" "}
               looking to help companies leverage technology to do more than they
               had ever thought possible.
             </h2>
@@ -42,7 +45,7 @@ export default function AboutSection() {
           transition={{ duration: 0.7 }}
         >
           <div className="grid md:grid-cols-2 justify-between gap-6 w-full">
-            <div className="relative bg-gradient-to-bl from-purple-600 via-fuchsia-700 to-fuchsia-500 p-8 rotate-2 rounded-lg overflow-hidden">
+            <div className="relative bg-gradient-to-bl from-purple-600 via-fuchsia-700 to-fuchsia-500 shadow-[0_-4px_0_0_rgba(0,0,0,0),4px_0_70px_rgba(168,85,247,0.2),-4px_0_70px_rgba(168,85,247,0.2),0_0_70px_rgba(168,85,247,0.2)] p-8 rotate-2 rounded-lg overflow-hidden">
               <Image
                 src="/images/team-work.png?height=100&width=100"
                 width={500}

@@ -23,7 +23,10 @@ export default function HeroSection() {
         >
           Xylo Digital Solutions
           <br />
-          Your guide in the <span className="text-purple-500">digital age</span>
+          Your guide in the{" "}
+          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-violet-800 to-fuchsia-500">
+            digital age
+          </span>
           .
         </motion.h1>
         <motion.div

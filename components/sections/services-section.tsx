@@ -1,13 +1,13 @@
-"use client"
-import { motion } from "framer-motion"
-import SectionHeader from "@/components/ui/section-header"
-import ServiceCard from "@/components/ui/service-card"
+"use client";
+import { motion } from "framer-motion";
+import SectionHeader from "@/components/ui/section-header";
+import ServiceCard from "@/components/ui/service-card";
 
 export default function ServicesSection() {
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
-  }
+  };
 
   const staggerChildren = {
     hidden: { opacity: 0 },
@@ -17,30 +17,35 @@ export default function ServicesSection() {
         staggerChildren: 0.3,
       },
     },
-  }
+  };
 
   return (
-    <section className="w-full py-12 md:py-24 bg-black">
-      <div className="container px-4 md:px-6">
+    <section className="w-full py-12 md:py-24 bg-purple-400/20">
+      <div className="container mx-auto px-4 md:px-6">
         <SectionHeader title="OUR SERVICES" />
         <motion.h2
-          className="text-3xl font-bold mb-6"
+          className="text-4xl font-bold mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Our <span className="text-purple-500">comprehensive services</span> will cover all your needs.
+          Our{" "}
+          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-violet-800 to-fuchsia-500">
+            comprehensive services
+          </span>{" "}
+          will cover all your needs.
         </motion.h2>
         <motion.p
-          className="text-white/70 mb-12 max-w-3xl"
+          className="text-white/70 mb-12 text-xl max-w-3xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          We deliver high-end solutions that leverage the latest technologies and methodologies. Our team of experts is
-          committed to providing exceptional service and innovative solutions for your business.
+          We deliver high-end solutions that leverage the latest technologies
+          and methodologies. Our team of experts is committed to providing
+          exceptional service and innovative solutions for your business.
         </motion.p>
 
         <motion.div
@@ -178,6 +183,5 @@ export default function ServicesSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-
