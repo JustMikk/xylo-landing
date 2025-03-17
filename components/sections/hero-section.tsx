@@ -10,6 +10,7 @@ import { ImConnection } from "react-icons/im";
 import { FaConnectdevelop } from "react-icons/fa";
 import { BiChip } from "react-icons/bi";
 import { IoArrowDownOutline } from "react-icons/io5";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -35,9 +36,11 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Button className="bg-gradient-to-bl from-sky-700/60 via-cyan-600 to-teal-400 hover:bg-cyan-700 text-white rounded-full px-8">
-            Get Started
-          </Button>
+          <Link href="#services">
+            <Button className="bg-gradient-to-bl from-sky-700/60 via-cyan-600 to-teal-400 hover:bg-cyan-700 text-white rounded-full px-8">
+              Get Started
+            </Button>
+          </Link>
         </motion.div>
 
         <motion.div
@@ -79,7 +82,9 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.8 }}
         >
           Scroll to learn more{" "}
-          <ChevronDownCircle className="text-2xl mx-auto cursor-pointer my-4 text-white/70 group-hover:scale-110 ease-in-out duration-200 delay-100" />
+          <Link href="#services">
+            <ChevronDownCircle className="text-2xl mx-auto cursor-pointer my-4 text-white/70 group-hover:scale-110 ease-in-out duration-200 delay-100" />
+          </Link>
         </motion.div>
       </div>
     </section>

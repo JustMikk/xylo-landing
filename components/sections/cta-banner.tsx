@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CtaBanner() {
   return (
@@ -25,14 +26,18 @@ export default function CtaBanner() {
           </div>
           <div className="flex gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-white text-cyan-600 hover:bg-white/90 rounded-full px-8">
-                Let's Talk
-              </Button>
+              <Link href="#contact">
+                <Button className="bg-white text-cyan-600 hover:bg-white/90 rounded-full px-8">
+                  Let's Talk
+                </Button>
+              </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-cyan-600 text-white hover:bg-cyan-600/90 rounded-full px-9">
-                Book Your Consultation
-              </Button>
+              <Link href="#contact">
+                <Button className="bg-cyan-800 text-white hover:bg-cyan-600/90 rounded-full px-9">
+                  Book Your Consultation
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </div>

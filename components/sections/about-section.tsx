@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/ui/section-header";
 import { CircleCheck, DatabaseIcon } from "lucide-react";
-import { GiBrickPile } from "react-icons/gi";
 
 export default function AboutSection() {
   return (
