@@ -31,7 +31,7 @@ export default function ProcessSection() {
           transition={{ duration: 0.5 }}
         >
           Experience the Power of{" "}
-          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-blue-800 via-green-800 to-green-400">
+          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-sky-700/60 via-cyan-600 to-teal-400">
             Process
           </span>
           .
@@ -51,16 +51,14 @@ export default function ProcessSection() {
         {/* Timeline Process Section */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-green-500/20 transform md:-translate-x-1/2"></div>
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-cyan-500/20 transform md:-translate-x-1/2"></div>
 
-          <div className="space-y-24">
+          <div className="space-y-16">
             <ProcessStep
               number={1}
-              src="/images/strategy.png"
+              src="/images/placeholder.png"
               title="Strategy"
               description="First, we need to know your goals, your users, and your business to create a plan that works."
-              sideTitle="Define"
-              sideDescription="We start by understanding your business objectives and user needs"
               isLeft={true}
               delay={0}
               controls={controls}
@@ -68,11 +66,9 @@ export default function ProcessSection() {
 
             <ProcessStep
               number={2}
-              src="/images/design.png"
+              src="/images/placeholder.png"
               title="Design"
               description="We create wireframes and designs that align with your brand and provide an optimal user experience."
-              sideTitle="Create"
-              sideDescription="We design intuitive interfaces and experiences that delight users"
               isLeft={false}
               delay={0.2}
               controls={controls}
@@ -80,11 +76,9 @@ export default function ProcessSection() {
 
             <ProcessStep
               number={3}
-              src="/images/development.png"
+              src="/images/placeholder.png"
               title="Development"
               description="Our engineers build your solution using modern technologies and best practices."
-              sideTitle="Build"
-              sideDescription="We develop robust, scalable solutions with clean code"
               isLeft={true}
               delay={0.4}
               controls={controls}
@@ -92,11 +86,9 @@ export default function ProcessSection() {
 
             <ProcessStep
               number={4}
-              src="/images/delivery.png"
+              src="/images/placeholder.png"
               title="Deliver"
               description="We deploy your solution and provide ongoing support to ensure its success."
-              sideTitle="Launch"
-              sideDescription="We deploy and maintain your solution with ongoing support"
               isLeft={false}
               delay={0.6}
               controls={controls}

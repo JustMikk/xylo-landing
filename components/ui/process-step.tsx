@@ -7,8 +7,6 @@ interface ProcessStepProps {
   number: number;
   title: string;
   description: string;
-  sideTitle: string;
-  sideDescription: string;
   isLeft: boolean;
   delay?: number;
   controls: AnimationControls;
@@ -19,8 +17,6 @@ export default function ProcessStep({
   number,
   title,
   description,
-  sideTitle,
-  sideDescription,
   src,
   isLeft,
   delay = 0,
@@ -42,21 +38,19 @@ export default function ProcessStep({
             isLeft ? "md:pr-12 md:text-right" : "md:pl-12"
           } mb-8 md:mb-0 ${isLeft ? "order-2 md:order-1" : "order-2"}`}
         >
-          <div className="bg-gray-800/80 p-6 rounded-lg border border-green-500/20 shadow-[0_0_20px_rgba(74,222,128,0.2)]">
-            <h3 className="text-lg font-medium mb-2 text-white">{title}</h3>
-            <p className="text-white/70 text-sm mb-4">{description}</p>
-            <div className="mt-4 bg-gray-900 rounded-lg p-4">
+          <div className="">
+            <div className="">
               <Image
                 src={src}
                 width={300}
                 height={200}
                 alt={`${title} visualization`}
-                className="w-full h-auto"
+                className="w-full h-auto bg-neutral-600/20 p-9 rounded-lg  shadow-[0_-4px_0_0_rgba(0,0,0,0),4px_0_40px_rgba(6,182,212,0.2),-4px_0_40px_rgba(6,182,212,0.2),0_0_40px_rgba(6,182,212,0.2)]"
               />
             </div>
           </div>
         </div>
-        <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white font-bold transform md:-translate-x-1/2 z-10">
+        <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold transform md:-translate-x-1/2 z-10">
           {number}
         </div>
         <div
@@ -66,8 +60,8 @@ export default function ProcessStep({
         >
           <div className="h-full flex items-center justify-end">
             <div className="bg-black/40 p-4 rounded-lg">
-              <h4 className="text-green-400 font-medium">{sideTitle}</h4>
-              <p className="text-white/70 text-sm">{sideDescription}</p>
+              <h4 className="text-cyan-400 font-medium">{title}</h4>
+              <p className="text-white/70 text-sm">{description}</p>
             </div>
           </div>
         </div>

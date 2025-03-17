@@ -20,7 +20,7 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="w-full py-12 md:py-24 bg-purple-400/20">
+    <section className="w-full py-12 md:py-24 bg-cyan-600/20">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader title="OUR SERVICES" />
         <motion.h2
@@ -31,7 +31,7 @@ export default function ServicesSection() {
           transition={{ duration: 0.5 }}
         >
           Our{" "}
-          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-violet-800 to-fuchsia-500">
+          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-sky-700/60 via-cyan-600 to-teal-400">
             comprehensive services
           </span>{" "}
           will cover all your needs.

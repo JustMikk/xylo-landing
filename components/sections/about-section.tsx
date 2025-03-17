@@ -19,12 +19,12 @@ export default function AboutSection() {
           className="md:w-1/2 w-full py-8"
         >
           <div className="flex gap-6">
-            <div className="flex items-center justify-center rounded-full bg-purple-500 border border-purple-500 bg-purple-700/60 shadow-[0_0_15px_rgba(168,85,247,0.5)] w-12 h-12 p-3">
+            <div className="flex items-center justify-center rounded-full bg-cyan-500 border border-cyan-500 bg-cyan-700/60 shadow-[0_0_15px_rgba(168,85,247,0.5)] w-12 h-12 p-3">
               <DatabaseIcon className="text-white/90 text-xl" />
             </div>
             <h2 className="text-4xl font-bold mb-6">
               We are a{" "}
-              <span className="bg-gradient-to-bl bg-clip-text text-transparent from-violet-800 to-fuchsia-500">
+              <span className="bg-gradient-to-bl bg-clip-text text-transparent from-sky-700/60 via-cyan-600 to-teal-400">
                 group of experts
               </span>{" "}
               looking to help companies leverage technology to do more than they
@@ -45,33 +45,33 @@ export default function AboutSection() {
           transition={{ duration: 0.7 }}
         >
           <div className="grid md:grid-cols-2 justify-between gap-6 w-full">
-            <div className="relative bg-gradient-to-bl from-purple-600 via-fuchsia-700 to-fuchsia-500 shadow-[0_-4px_0_0_rgba(0,0,0,0),4px_0_70px_rgba(168,85,247,0.2),-4px_0_70px_rgba(168,85,247,0.2),0_0_70px_rgba(168,85,247,0.2)] p-8 rotate-2 rounded-lg overflow-hidden">
+            <div className="relative m-12 bg-gradient-to-bl from-sky-700/60 via-cyan-600 to-teal-400 hover:shadow-[0_-4px_0_0_rgba(0,0,0,0),4px_0_40px_rgba(6,182,212,0.2),-4px_0_40px_rgba(6,182,212,0.2),0_0_40px_rgba(6,182,212,0.2)] group hover:p-8 hover:rotate-2 transition-transform rounded-lg overflow-hidden">
               <Image
                 src="/images/team-work.png?height=100&width=100"
                 width={500}
                 height={300}
                 alt="Team working together"
-                className="w-full h-auto -rotate-3 rounded-lg"
+                className="w-full h-auto group-hover:-rotate-3 transition-transform rounded-lg"
               />
             </div>
             <div className="mt-6 flex flex-col gap-8 justify-center items-center">
               <ul className="flex flex-col gap-4 text-lg text-wrap">
                 <li className="flex gap-2 text-white/70">
-                  <CircleCheck className="w-6 h-6 text-purple-500" />
+                  <CircleCheck className="w-6 h-6 text-cyan-500" />
                   We always focus on technical excellence
                 </li>
                 <li className="flex gap-2 text-white/70">
-                  <CircleCheck className="w-6 h-6 text-purple-500" />
+                  <CircleCheck className="w-6 h-6 text-cyan-500" />
                   Talented team with decades of experience in software
                   development
                 </li>
                 <li className="flex gap-2 text-white/70">
-                  <CircleCheck className="w-6 h-6 text-purple-500" />
+                  <CircleCheck className="w-6 h-6 text-cyan-500" />
                   We're consultants, doers, and partners for brands
                 </li>
               </ul>
               <div className="w-full text-center">
-                <div className="text-purple-500 font-script text-2xl">
+                <div className="text-cyan-500 font-script text-2xl">
                   Henok Assefa
                 </div>
                 <div className="text-lg text-white/70">

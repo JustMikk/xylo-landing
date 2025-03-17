@@ -74,7 +74,7 @@ export default function Header() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full">
+          <Button className="bg-gradient-to-bl from-sky-700/60 via-cyan-600 to-teal-400 hover:bg-cyan-700 text-white rounded-full">
             Let's Talk
           </Button>
         </motion.div>
