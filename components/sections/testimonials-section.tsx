@@ -1,12 +1,12 @@
-"use client"
-import { motion } from "framer-motion"
-import TestimonialCard from "@/components/ui/testimonial-card"
+"use client";
+import { motion } from "framer-motion";
+import TestimonialCard from "@/components/ui/testimonial-card";
 
 export default function TestimonialsSection() {
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
-  }
+  };
 
   const staggerChildren = {
     hidden: { opacity: 0 },
@@ -16,11 +16,11 @@ export default function TestimonialsSection() {
         staggerChildren: 0.3,
       },
     },
-  }
+  };
 
   return (
     <section className="w-full py-12 md:py-24 bg-black">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           className="flex items-center gap-2 mb-4"
           initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center">
+          <div className="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
         </motion.div>
 
         <motion.h2
-          className="text-3xl font-bold mb-6"
+          className="text-4xl font-bold mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -57,7 +57,10 @@ export default function TestimonialsSection() {
         >
           Testimonials.
           <br />
-          <span className="text-purple-500">Loved</span> by product people.
+          <span className="bg-gradient-to-bl bg-clip-text text-transparent from-sky-700/60 via-cyan-600 to-teal-400">
+            Loved
+          </span>{" "}
+          by product people.
         </motion.h2>
         <motion.p
           className="text-white/70 mb-12 max-w-3xl"
@@ -66,8 +69,9 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Hear about what our previous clients have to say about our services.
+          We are proud to have worked with some amazing companies and
+          individuals.
         </motion.p>
 
         <motion.div
@@ -78,25 +82,24 @@ export default function TestimonialsSection() {
           variants={staggerChildren}
         >
           <TestimonialCard
-            name="Sarah Johnson"
-            role="CEO, Acme Inc."
-            quote="I couldn't be any happier with the specialists at Tech Yes! Amazing work!"
+            name="Robel Tefera"
+            role="Agent, Software Agency"
+            quote="I couldn't be any happier with the specialists at Xylo, Amazing work!"
           />
 
           <TestimonialCard
-            name="James Peters"
-            role="CTO, Perfect"
+            name="Nejmia Ahmed"
+            role="Entereneur, Addis Path Trailer Rentals"
             quote="Great service and fantastic results. Would recommend Tech Yes!"
           />
 
           <TestimonialCard
-            name="Michael Brown"
-            role="Founder, Startup"
+            name="Kiya Kebe"
+            role="President, CSEC ASTU"
             quote="Absolutely brilliant! I couldn't say enough!"
           />
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-
