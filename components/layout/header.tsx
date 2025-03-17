@@ -56,10 +56,16 @@ export default function Header() {
             Services
           </Link>
           <Link
-            href="#Blog"
+            href="#process"
             className="text-sm font-medium text-white/70 hover:text-white transition-colors"
           >
-            Blog
+            Process
+          </Link>
+          <Link
+            href="#testimonial"
+            className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+          >
+            Testimonial
           </Link>
           <Link
             href="#contact"

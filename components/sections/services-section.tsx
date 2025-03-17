@@ -20,7 +20,7 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="w-full py-12 md:py-24 bg-cyan-600/20">
+    <section id="services" className="w-full py-12 md:py-24 bg-cyan-600/20">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader title="OUR SERVICES" />
         <motion.h2

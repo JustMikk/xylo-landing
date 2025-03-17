@@ -18,6 +18,7 @@ export default function ProcessSection() {
 
   return (
     <section
+      id="process"
       className="w-full py-12 md:py-24 bg-gradient-to-b from-black to-gray-900/90"
       ref={processRef}
     >

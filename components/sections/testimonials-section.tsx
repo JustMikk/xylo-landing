@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="w-full py-12 md:py-24 bg-black">
+    <section id="testimonial" className="w-full py-12 md:py-24 bg-black">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           className="flex items-center gap-2 mb-4"

@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactSection() {
   return (
-    <section className="w-full py-12 md:py-24 bg-black">
+    <section id="contact" className="w-full py-12 md:py-24 bg-black">
       <div className="container mx-auto px-4 md:px-6">
         <motion.h2
           className="text-3xl font-bold mb-12"

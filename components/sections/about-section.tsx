@@ -8,7 +8,7 @@ import { GiBrickPile } from "react-icons/gi";
 
 export default function AboutSection() {
   return (
-    <section className="w-full py-12 md:py-24 bg-black">
+    <section id="about-us" className="w-full py-12 md:py-24 bg-black">
       <div className="container px-4 mx-auto md:px-6">
         <SectionHeader title="WHO WE ARE" />
         <motion.div
