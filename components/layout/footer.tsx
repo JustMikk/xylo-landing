@@ -1,37 +1,28 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="w-full py-12 bg-black border-t border-gray-800">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-white font-medium mb-4">COMPANY INFO</h3>
-            <p className="text-white/70 text-sm mb-4">
-              Tech Yes! Solutions is a digital agency specializing in web development, mobile apps, and custom software
-              solutions.
+            <p className="text-white/70 text-md mb-4">
+              Xylo Digital Solutions is a digital agency specializing in web
+              development, mobile apps, and custom software solutions.
             </p>
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-white"
-                >
-                  <path d="M10.5 20H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v3.5" />
-                  <path d="M20 14v4a2 2 0 0 1-2 2h-2" />
-                  <path d="M13 18h.01" />
-                  <path d="M17 18h.01" />
-                  <path d="M13 14h.01" />
-                  <path d="M17 14h.01" />
-                </svg>
-              </div>
-              <span className="text-white font-bold">Tech Yes!</span>
+              <Image
+                src="/images/logo.png"
+                className="mt-3"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+
+              <span className="text-white font-bold">
+                Xylo Digital Solutions
+              </span>
             </div>
           </div>
 
@@ -57,7 +48,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-white font-medium mb-4">OUR SOLUTIONS</h3>
             <ul className="space-y-2 text-white/70 text-sm">
               <li>Enterprise Solutions</li>
@@ -67,14 +58,22 @@ export default function Footer() {
               <li>Cloud Services</li>
               <li>Data Analytics</li>
             </ul>
+          </div> */}
+
+          <div>
+            <Image
+              src="/images/map.png"
+              alt="footer map"
+              width={400}
+              height={400}
+            />
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-gray-800 text-white/50 text-xs">
-          © 2023 Tech Yes! Solutions. All Rights Reserved.
+          © 2025 Xylo Digital Solutions. All Rights Reserved.
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

@@ -42,10 +42,10 @@ export default function ProcessStep({
             <div className="">
               <Image
                 src={src}
-                width={300}
-                height={200}
+                width={600}
+                height={600}
                 alt={`${title} visualization`}
-                className="w-full h-auto bg-neutral-600/20 p-9 rounded-lg  shadow-[0_-4px_0_0_rgba(0,0,0,0),4px_0_40px_rgba(6,182,212,0.2),-4px_0_40px_rgba(6,182,212,0.2),0_0_40px_rgba(6,182,212,0.2)]"
+                className=" bg-neutral-600/20 p-9 rounded-lg  shadow-[0_-4px_0_0_rgba(0,0,0,0),4px_0_40px_rgba(6,182,212,0.2),-4px_0_40px_rgba(6,182,212,0.2),0_0_40px_rgba(6,182,212,0.2)]"
               />
             </div>
           </div>
