@@ -85,18 +85,21 @@ export default function TestimonialsSection() {
             name="Robel Tefera"
             role="Agent, Software Agency"
             quote="I couldn't be any happier with the specialists at Xylo, Amazing work!"
+            imageSrc="/images/testimonials/robel.jpg"
           />
 
           <TestimonialCard
             name="Nejmia Ahmed"
             role="Entereneur, Addis Path Trailer Rentals"
             quote="Great service and fantastic results. Would recommend Tech Yes!"
+            imageSrc="/images/testimonials/nejmia.jpg"
           />
 
           <TestimonialCard
             name="Kiya Kebe"
             role="President, CSEC ASTU"
             quote="Absolutely brilliant! I couldn't say enough!"
+            imageSrc="/images/testimonials/kiya.jpg"
           />
         </motion.div>
       </div>
