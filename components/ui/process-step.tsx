@@ -50,7 +50,7 @@ export default function ProcessStep({
             </div>
           </div>
         </div>
-        <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold transform md:-translate-x-1/2 z-10">
+        <div className="absolute left-4 -top-8 md:top-0 md:left-1/2 w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold transform md:-translate-x-1/2 z-10">
           {number}
         </div>
         <div

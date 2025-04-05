@@ -5,12 +5,107 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-50% 0px",
+        threshold: 0,
+      }
+    );
+
+    const sections = document.querySelectorAll("section[id]");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
+  const NavLinks = () => (
+    <>
+      <Link
+        href="#"
+        className={`text-sm font-medium transition-all relative ${
+          activeSection === "" ? "text-white" : "text-white/70 hover:text-white"
+        } ${
+          activeSection === "" &&
+          "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-cyan-500"
+        }`}
+      >
+        Home
+      </Link>
+      <Link
+        href="#about-us"
+        className={`text-sm font-medium transition-all relative ${
+          activeSection === "about-us" ? "text-white" : "text-white/70 hover:text-white"
+        } ${
+          activeSection === "about-us" &&
+          "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-cyan-500"
+        }`}
+      >
+        About Us
+      </Link>
+      <Link
+        href="#services"
+        className={`text-sm font-medium transition-all relative ${
+          activeSection === "services" ? "text-white" : "text-white/70 hover:text-white"
+        } ${
+          activeSection === "services" &&
+          "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-cyan-500"
+        }`}
+      >
+        Services
+      </Link>
+      <Link
+        href="#process"
+        className={`text-sm font-medium transition-all relative ${
+          activeSection === "process" ? "text-white" : "text-white/70 hover:text-white"
+        } ${
+          activeSection === "process" &&
+          "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-cyan-500"
+        }`}
+      >
+        Process
+      </Link>
+      <Link
+        href="#testimonial"
+        className={`text-sm font-medium transition-all relative ${
+          activeSection === "testimonial" ? "text-white" : "text-white/70 hover:text-white"
+        } ${
+          activeSection === "testimonial" &&
+          "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-cyan-500"
+        }`}
+      >
+        Testimonial
+      </Link>
+      <Link
+        href="#contact"
+        className={`text-sm font-medium transition-all relative ${
+          activeSection === "contact" ? "text-white" : "text-white/70 hover:text-white"
+        } ${
+          activeSection === "contact" &&
+          "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-cyan-500"
+        }`}
+      >
+        Contact
+      </Link>
+    </>
+  );
 
   return (
     <header
@@ -128,44 +223,3 @@ export default function Header() {
     </header>
   );
 }
-
-const NavLinks = () => (
-  <>
-    <Link
-      href="#"
-      className="text-sm font-medium text-white/90 hover:text-white transition-colors"
-    >
-      Home
-    </Link>
-    <Link
-      href="#about-us"
-      className="text-sm font-medium text-white/70 hover:text-white transition-colors"
-    >
-      About Us
-    </Link>
-    <Link
-      href="#services"
-      className="text-sm font-medium text-white/70 hover:text-white transition-colors"
-    >
-      Services
-    </Link>
-    <Link
-      href="#process"
-      className="text-sm font-medium text-white/70 hover:text-white transition-colors"
-    >
-      Process
-    </Link>
-    <Link
-      href="#testimonial"
-      className="text-sm font-medium text-white/70 hover:text-white transition-colors"
-    >
-      Testimonial
-    </Link>
-    <Link
-      href="#contact"
-      className="text-sm font-medium text-white/70 hover:text-white transition-colors"
-    >
-      Contact
-    </Link>
-  </>
-);
