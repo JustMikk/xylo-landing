@@ -60,8 +60,8 @@ export default function ProcessStep({
         >
           <div className="h-full flex items-center justify-end">
             <div className="bg-black/40 p-4 rounded-lg">
-              <h4 className="text-cyan-400 font-medium">{title}</h4>
-              <p className="text-white/70 text-sm">{description}</p>
+              <h4 className="text-cyan-400 text-lg sm:text-xl md:text-2xl font-medium mb-2">{title}</h4>
+              <p className="text-white/70 text-base sm:text-lg md:text-xl">{description}</p>
             </div>
           </div>
         </div>

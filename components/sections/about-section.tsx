@@ -21,7 +21,7 @@ export default function AboutSection() {
             <div className="flex items-center justify-center rounded-full bg-cyan-500 border border-cyan-500 bg-cyan-700/60 shadow-[0_0_15px_rgba(168,85,247,0.5)] w-12 h-12 p-3">
               <DatabaseIcon className="text-white/90 text-xl" />
             </div>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
               We are a{" "}
               <span className="bg-gradient-to-bl bg-clip-text text-transparent from-sky-700/60 via-cyan-600 to-teal-400">
                 group of experts
@@ -30,7 +30,7 @@ export default function AboutSection() {
               had ever thought possible.
             </h2>
           </div>
-          <p className="text-white/70 text-2xl mb-6">
+          <p className="text-white/70 text-lg sm:text-xl md:text-2xl mb-6">
             We offer the full range of services to provide comprehensive
             solutions for your business. From systems design to development and
             beyond, we're here to help you succeed.

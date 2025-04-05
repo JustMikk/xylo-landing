@@ -25,7 +25,7 @@ export default function ProcessSection() {
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader title="OUR PROCESS" />
         <motion.h2
-          className="text-3xl font-bold mb-12"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -38,7 +38,7 @@ export default function ProcessSection() {
           .
         </motion.h2>
         <motion.p
-          className="text-white/70 mb-16 max-w-3xl"
+          className="text-white/70 mb-16 text-lg sm:text-xl md:text-2xl max-w-3xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

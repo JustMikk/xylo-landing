@@ -17,7 +17,7 @@ export default function HeroSection() {
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-cyan-900/40 to-black">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <motion.h1
-          className="text-4xl md:text-7xl font-bold tracking-tighter mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
