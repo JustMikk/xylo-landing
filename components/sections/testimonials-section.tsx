@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
 
           <TestimonialCard
             name="Nejmia Ahmed"
-            role="Entereneur, Addis Path Trailer Rentals"
+            role="Entrepreneur, Addis Path Trailer Rentals"
             quote="Great service and fantastic results. Would recommend Tech Yes!"
             imageSrc="/images/testimonials/nejmia.jpg"
           />

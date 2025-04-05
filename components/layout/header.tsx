@@ -26,10 +26,10 @@ export default function Header() {
         >
           <div className="flex justify-center items-center gap-2">
             <Image
-              className="hidden sm:block mt-5"
+              className="hidden sm:block"
               src="/images/logo.png"
-              width={120}
-              height={120}
+              width={110}
+              height={110}
               alt="Xylo logo"
             />
             <span className="text-base sm:text-lg font-bold text-wrap hidden sm:block">
