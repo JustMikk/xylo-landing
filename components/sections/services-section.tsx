@@ -44,7 +44,7 @@ export default function ServicesSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           We deliver high-end solutions that leverage the latest technologies
-          and methodologies. Our team of experts is committed to providing
+          and methodologies. Our team of experts is committed to provide
           exceptional service and innovative solutions for your business.
         </motion.p>
 
