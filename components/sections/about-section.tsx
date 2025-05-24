@@ -31,9 +31,9 @@ export default function AboutSection() {
             </h2>
           </div>
           <p className="text-white/70 text-lg sm:text-xl md:text-2xl mb-6">
-            We offer the full range of services to provide comprehensive
-            solutions for your business. From systems design to development and
-            beyond, we're here to help you succeed.
+            We offer a full range of services to provide comprehensive solutions
+            for your business. From systems design to development and beyond,
+            we're here to help you succeed.
           </p>
         </motion.div>
         <motion.div
